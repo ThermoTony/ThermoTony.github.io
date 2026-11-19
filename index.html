@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Smarthome Dashboard</title>
+<meta name="description" content="Privates Home-Assistant-Dashboard mit YouTube-Anbindung (nur Lesezugriff).">
+<style>
+  :root{--bg:#f6f4fb;--card:#fff;--ink:#1f1b2e;--muted:#5f5a73;--line:#e3dff0;--acc:#6b4fd8}
+  @media (prefers-color-scheme:dark){:root{--bg:#17141f;--card:#211d2c;--ink:#ece9f5;--muted:#a49fb8;--line:#332e42;--acc:#b39cff}}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+  main{max-width:720px;margin:0 auto;padding:48px 16px 64px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:28px}
+  h1{margin:0 0 6px;font-size:28px;line-height:1.2}
+  .sub{margin:0 0 24px;color:var(--muted)}
+  h2{margin:28px 0 8px;font-size:18px}
+  ul{margin:0;padding-left:20px}
+  a{color:var(--acc)}
+  footer{margin-top:24px;color:var(--muted);font-size:14px;text-align:center}
+</style>
+</head>
+<body>
+<main>
+  <div class="card">
+    <h1>Smarthome Dashboard</h1>
+    <p class="sub">Ein privates Dashboard für die eigene Home-Assistant-Installation.</p>
+
+    <p>Das Smarthome Dashboard ist eine Bedienoberfläche für das eigene Zuhause. Es läuft innerhalb einer privaten Home-Assistant-Installation und ist nicht öffentlich zugänglich. Es wird ausschließlich vom Betreiber und seinem Haushalt genutzt.</p>
+
+    <h2>YouTube-Anbindung</h2>
+    <p>Nach der Anmeldung mit einem Google-Konto zeigt das Dashboard auf dem Wandtablet und im Browser:</p>
+    <ul>
+      <li>die neuesten Videos der abonnierten Kanäle,</li>
+      <li>die Liste der Abos,</li>
+      <li>die eigenen Playlists,</li>
+      <li>die Videos mit „Mag ich“.</li>
+    </ul>
+    <p>Die Videos werden mit dem offiziellen eingebetteten YouTube-Player abgespielt. Das Dashboard hat nur <b>Lesezugriff</b> (<code>youtube.readonly</code>). Es kann nichts abonnieren, bewerten, kommentieren, hochladen oder löschen.</p>
+
+    <h2>Datenschutz</h2>
+    <p>Welche Daten dabei verarbeitet werden und wie du den Zugriff widerrufst, steht in der <a href="datenschutz.html">Datenschutzerklärung</a>.</p>
+  </div>
+  <footer><a href="datenschutz.html">Datenschutzerklärung</a></footer>
+</main>
+</body>
+</html>
